@@ -1,37 +1,35 @@
-# Timilehin Osiyoku | Portfolio
+# Timilehin Osiyoku — Portfolio 🚀
 
-Welcome to my personal developer portfolio, built with **Next.js 15** and **TailwindCSS**!
+Welcome to my personal portfolio, showcasing my latest projects, skills, and journey as a web developer.
 
-## Overview
-This portfolio showcases my latest work, including:
+### 📂 Live Website
+[Visit Portfolio](https://your-vercel-link-here.com) 
 
-- **PixelPrompt**: AI-powered futuristic pixel art generator
-- **Recipe Finder**: Ingredient-based recipe search
-- **Weather App**: Live weather by city
-- **To-Do List**: Simple daily task manager
-
-Each project reflects my journey in web development, my skills in API integrations, responsive design, and UI/UX best practices.
-
-## Built With
+### 🛠️ Technologies Used
 - Next.js 15
-- TailwindCSS
-- Vercel Deployment
-- GitHub Version Control
-- Space Grotesk font (Google Fonts)
+- Tailwind CSS
+- React
+- HTML, CSS, JavaScript
+- Vercel (Deployment)
 
-## Live Demo
-Check out the live portfolio here:  
-[https://pixelprompt-one.vercel.app/](https://pixelprompt-one.vercel.app/)
+### 📸 Featured Projects
+- **PixelPrompt** — AI-powered pixel art generator for game assets.
+- **Recipe Finder** — Find recipes based on ingredients.
+- **Weather App** — Real-time weather forecasting.
+- **To-Do List** — Manage daily tasks easily.
 
-## Screenshots
-> (You can add screenshots here if you want. Example:)
-> 
-> ![Landing Page](./public/screenshots/landing-page.png)
+### 📚 About Me
+I'm a passionate web developer focused on building clean, responsive, and user-friendly applications. I believe in constant learning, creativity, and making technology accessible to everyone.
 
-## How to Run Locally
+### 📞 Contact
+- **Email:** timmysolomon953@gmail.com
+- **GitHub:** [Timmysolomon](https://github.com/Timmysolomon)
 
-```bash
-git clone https://github.com/Timmysolomon/pixelprompt.git
-cd pixelprompt
-npm install
-npm run dev
+---
+
+# 🚀 Future Goals
+- Improve backend development skills
+- Explore AI and SaaS product development
+- Build real-world business applications
+
+---
