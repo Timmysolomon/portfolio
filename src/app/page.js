@@ -22,7 +22,7 @@ export default function Home() {
               See My Work
             </a>
             <a href="/contact" className="inline-block px-6 py-3 border border-[#b08968] text-[#b08968] font-semibold rounded hover:bg-[#b08968] hover:text-black transition">
-              Let's Connect
+              Let&apos;s Connect
             </a>
           </div>
         </FadeIn>
