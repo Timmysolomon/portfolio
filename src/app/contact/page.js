@@ -1,20 +1,13 @@
 'use client';
 
-import Link from 'next/link';
-
-export default function Contact() {
+export default function ContactPage() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen p-8">
-      <h1 className="text-4xl font-bold text-[#6366f1] mb-6">Contact Me</h1>
-      <p className="text-gray-400 mb-8 text-center">
-        Want to work together or just say hi? <br /> Email me at: <strong>timmysolomon953@gmail.com</strong>
+    <section className="min-h-screen flex flex-col items-center justify-center text-center px-6 py-20 bg-[#fefcf9] dark:bg-[#0a0a0a] animate-fade-in">
+      <h1 className="text-4xl font-bold mb-4 text-brown-800 dark:text-white">Contact</h1>
+      <p className="text-neutral-700 dark:text-neutral-300 max-w-2xl">
+        Want to collaborate, give feedback, or just say hello?  
+        Reach out via email at <span className="underline">timmysolomon953@gmail.com</span>.
       </p>
-
-      <Link href="/">
-        <button className="px-6 py-3 bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition">
-          Back to Home
-        </button>
-      </Link>
-    </main>
+    </section>
   );
 }

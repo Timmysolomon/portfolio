@@ -1,22 +1,16 @@
-'use client';
-
-import Link from 'next/link';
-
-export default function About() {
+export default function AboutPage() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen p-8">
-      <h1 className="text-4xl font-bold text-[#6366f1] mb-6">About Me</h1>
-      <p className="text-gray-400 max-w-2xl text-center mb-8">
-        I'm a passionate Frontend Developer who loves crafting beautiful and user-friendly websites.
-        I focus on modern technologies like Next.js, TailwindCSS, and integrating real-world APIs.
-        Let's build something amazing together.
+    <section className="max-w-3xl mx-auto px-6 py-20 text-center">
+      <h2 className="text-4xl font-bold mb-6">About Me</h2>
+      <p className="text-lg text-neutral-700 dark:text-neutral-300 leading-relaxed">
+        I&apos;m Timilehin Osiyoku — a passionate web developer with a love for clean UI,
+        real-world functionality, and delivering results. From frontend interfaces to
+        full-stack apps, I build projects that are responsive, interactive, and performance-focused.
+        <br /><br />
+        My journey into tech was fueled by curiosity and determination, and I now specialize in
+        JavaScript, React, Next.js, and Tailwind CSS. I&apos;m constantly learning and pushing
+        myself to grow — ready to bring value to users and teams.
       </p>
-
-      <Link href="/">
-        <button className="px-6 py-3 bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition">
-          Back to Home
-        </button>
-      </Link>
-    </main>
+    </section>
   );
 }
