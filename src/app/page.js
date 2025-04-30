@@ -1,31 +1,32 @@
-'use client';
-
-import Link from 'next/link';
+import FadeIn from '@/components/FadeIn';
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen p-8">
-      <h1 className="text-5xl font-bold text-[#6366f1] mb-6 animate-fade-in">Timilehin Osiyoku</h1>
-      <p className="text-gray-400 text-lg mb-10 text-center max-w-2xl animate-fade-in">
-        Creative Frontend Developer focused on building beautiful, responsive applications.
-      </p>
-
-      <div className="flex gap-6">
-        <Link href="/projects">
-          <button className="px-6 py-3 bg-[#6366f1] text-white rounded-lg hover:bg-[#4338ca] transition">
-            View Projects
-          </button>
-        </Link>
-        <Link href="/contact">
-          <button className="px-6 py-3 bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition">
-            Contact Me
-          </button>
-        </Link>
+    <section className="text-white bg-[#0f0f0f] py-24 sm:py-32 px-4 sm:px-6">
+      <div className="max-w-4xl mx-auto text-center space-y-8">
+        <FadeIn>
+          <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight">
+            Timilehin Osiyoku
+          </h1>
+        </FadeIn>
+        <FadeIn delay={0.2}>
+          <p className="text-base sm:text-xl text-gray-300 max-w-2xl mx-auto">
+            Web Developer • UI Engineer • AI Explorer
+            <br className="hidden sm:block" />
+            I build bold, fast, and scalable web apps that solve real problems.
+          </p>
+        </FadeIn>
+        <FadeIn delay={0.4}>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="/projects" className="inline-block px-6 py-3 bg-[#b08968] text-black font-semibold rounded hover:bg-[#a17857] transition">
+              See My Work
+            </a>
+            <a href="/contact" className="inline-block px-6 py-3 border border-[#b08968] text-[#b08968] font-semibold rounded hover:bg-[#b08968] hover:text-black transition">
+              Let's Connect
+            </a>
+          </div>
+        </FadeIn>
       </div>
-
-      <footer className="mt-12 text-gray-500 text-sm">
-        © 2025 Timilehin Osiyoku
-      </footer>
-    </main>
+    </section>
   );
 }

@@ -1,84 +1,80 @@
-'use client';
-import Image from 'next/image';
-import Link from 'next/link';
+import FadeIn from "@/components/FadeIn";
 
 const projects = [
   {
-    title: 'PixelPrompt',
-    description: 'AI-powered pixel art generator with Replicate API.',
-    link: 'https://pixelprompt-one.vercel.app/',
-    image: '/images/pixelprompt.png',
+    title: "MindScribe",
+    description: "A cozy and professional space for deep thoughts and blogs.",
+    image: "/projects/mindscribe.png",
+    link: "https://mindscribe-liart.vercel.app/"
   },
   {
-    title: 'WeatherGlow',
-    description: 'Real-time weather insights with a clean UI.',
-    link: 'https://weatherglow.vercel.app/',
-    image: '/images/weatherglow.png',
+    title: "PixelPrompt",
+    description: "AI-powered pixel art generator for game developers.",
+    image: "/projects/pixelprompt.png",
+    link: "https://pixelprompt-one.vercel.app/"
   },
   {
-    title: 'RecipeFinder Pro',
-    description: 'Search meals via Spoonacular API with a cozy UI.',
-    link: 'https://recipefinder-pro-1o7m.vercel.app/',
-    image: '/images/recipefinder.png',
+    title: "WeatherGlow",
+    description: "Live weather info with a minimal and glowing interface.",
+    image: "/projects/weatherglow.png",
+    link: "https://weatherglow.vercel.app/"
   },
   {
-    title: 'NoteNest',
-    description: 'Professional note-taking interface with local state.',
-    link: 'https://notenest-six.vercel.app/',
-    image: '/images/notenest.png',
+    title: "NoteNest",
+    description: "Organize your thoughts effortlessly with clean UI.",
+    image: "/projects/notenest.png",
+    link: "https://notenest-six.vercel.app/"
   },
   {
-    title: 'TaskFlow',
-    description: 'A modern to-do app redesigned for productivity.',
-    link: 'https://taskflow-opal-delta.vercel.app/',
-    image: '/images/taskflow.png',
+    title: "TaskFlow",
+    description: "Simple and stylish daily task tracker.",
+    image: "/projects/taskflow.png",
+    link: "https://taskflow-opal-delta.vercel.app/"
   },
   {
-    title: 'MindScribe',
-    description: 'Blog platform for cozy writing and deep thoughts.',
-    link: 'https://mindscribe-liart.vercel.app/',
-    image: '/images/mindscribe.png',
-  },
+    title: "RecipeFinder",
+    description: "Search and discover recipes with ease.",
+    image: "/projects/recipefinderpro.png",
+    link: "https://recipefinder-pro-1o7m.vercel.app/"
+  }
 ];
 
 export default function Projects() {
   return (
-    <main className="p-8 min-h-screen">
-      <h1 className="text-4xl font-bold text-center text-[#6366f1] mb-10">My Projects</h1>
-      <div className="grid md:grid-cols-2 gap-10">
-        {projects.map((project, index) => (
-          <div
-            key={index}
-            className="bg-[#111111] p-6 rounded-lg shadow-lg hover:shadow-blue-500/30 transition duration-500 animate-fade-in"
-          >
-            <Image
-              src={project.image}
-              alt={project.title}
-              width={600}
-              height={300}
-              className="rounded mb-4"
-            />
-            <h2 className="text-2xl font-semibold text-white mb-2">{project.title}</h2>
-            <p className="text-gray-400 mb-4">{project.description}</p>
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block mt-2 px-6 py-2 bg-[#6366f1] text-white rounded-lg hover:bg-[#4338ca] transition"
-            >
-              View Live
-            </a>
-          </div>
-        ))}
+    <section className="bg-[#0f0f0f] text-white py-24 px-4 sm:px-6 min-h-screen">
+      <div className="max-w-6xl mx-auto">
+        <FadeIn>
+          <h1 className="text-3xl sm:text-4xl font-bold mb-10 text-center">
+            Featured Projects
+          </h1>
+        </FadeIn>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <FadeIn key={project.title} delay={index * 0.1}>
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#1a1a1a] rounded-xl shadow-lg hover:scale-[1.02] transition overflow-hidden"
+              >
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-48 sm:h-52 md:h-56 object-cover"
+                />
+                <div className="p-4 sm:p-5">
+                  <h3 className="text-lg sm:text-xl font-semibold mb-1 sm:mb-2">
+                    {project.title}
+                  </h3>
+                  <p className="text-gray-400 text-sm">
+                    {project.description}
+                  </p>
+                </div>
+              </a>
+            </FadeIn>
+          ))}
+        </div>
       </div>
-
-      <div className="mt-16 text-center">
-        <Link href="/">
-          <button className="px-6 py-3 bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition">
-            Back to Home
-          </button>
-        </Link>
-      </div>
-    </main>
+    </section>
   );
 }

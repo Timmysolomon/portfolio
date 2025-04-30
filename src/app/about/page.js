@@ -1,16 +1,27 @@
-export default function AboutPage() {
+import FadeIn from "@/components/FadeIn";
+
+export const metadata = {
+  title: "About | Timilehin Osiyoku",
+};
+
+export default function About() {
   return (
-    <section className="max-w-3xl mx-auto px-6 py-20 text-center">
-      <h2 className="text-4xl font-bold mb-6">About Me</h2>
-      <p className="text-lg text-neutral-700 dark:text-neutral-300 leading-relaxed">
-        I&apos;m Timilehin Osiyoku — a passionate web developer with a love for clean UI,
-        real-world functionality, and delivering results. From frontend interfaces to
-        full-stack apps, I build projects that are responsive, interactive, and performance-focused.
-        <br /><br />
-        My journey into tech was fueled by curiosity and determination, and I now specialize in
-        JavaScript, React, Next.js, and Tailwind CSS. I&apos;m constantly learning and pushing
-        myself to grow — ready to bring value to users and teams.
-      </p>
+    <section className="bg-[#0f0f0f] text-white min-h-screen py-24 px-6">
+      <div className="max-w-3xl mx-auto space-y-6">
+        <FadeIn>
+          <h1 className="text-4xl font-bold">About Me</h1>
+        </FadeIn>
+        <FadeIn delay={0.2}>
+          <p className="text-gray-300">
+            I'm Timilehin Osiyoku, a passionate web developer and tech enthusiast dedicated to crafting clean, functional, and impactful digital experiences. I enjoy building user-centric products, exploring AI tools, and collaborating on creative ideas.
+          </p>
+        </FadeIn>
+        <FadeIn delay={0.4}>
+          <p className="text-gray-300">
+            I specialize in front-end development using React and Next.js and love solving problems through code. Outside of tech, I value deep connections, self-growth, and shared moments with people like Benita, who inspire me daily.
+          </p>
+        </FadeIn>
+      </div>
     </section>
   );
 }
