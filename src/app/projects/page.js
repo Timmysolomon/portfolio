@@ -6,7 +6,7 @@ const projects = [
   {
     title: 'PixelPrompt',
     description: 'AI-powered pixel art generator with Replicate API.',
-    link: 'https://timmysolomon.github.io/pixelprompt/',
+    link: 'https://pixelprompt-one.vercel.app/',
     image: '/images/pixelprompt.png',
   },
   {
