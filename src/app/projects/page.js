@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import FadeIn from "@/components/FadeIn";
 
 const projects = [
@@ -57,9 +58,12 @@ export default function Projects() {
                 rel="noopener noreferrer"
                 className="bg-[#1a1a1a] rounded-xl shadow-lg hover:scale-[1.02] transition overflow-hidden"
               >
-                <img
+                <Image
                   src={project.image}
                   alt={project.title}
+                  width={500}
+                  height={300}
+                  loading="lazy"
                   className="w-full h-48 sm:h-52 md:h-56 object-cover"
                 />
                 <div className="p-4 sm:p-5">
