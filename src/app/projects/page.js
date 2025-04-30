@@ -12,31 +12,31 @@ const projects = [
   {
     title: 'WeatherGlow',
     description: 'Real-time weather insights with a clean UI.',
-    link: 'https://timmysolomon.github.io/weatherglow/',
+    link: 'https://weatherglow.vercel.app/',
     image: '/images/weatherglow.png',
   },
   {
     title: 'RecipeFinder Pro',
     description: 'Search meals via Spoonacular API with a cozy UI.',
-    link: 'https://timmysolomon.github.io/recipefinder-pro/',
+    link: 'https://recipefinder-pro-1o7m.vercel.app/',
     image: '/images/recipefinder.png',
   },
   {
     title: 'NoteNest',
     description: 'Professional note-taking interface with local state.',
-    link: 'https://timmysolomon.github.io/notenest/',
+    link: 'https://notenest-six.vercel.app/',
     image: '/images/notenest.png',
   },
   {
     title: 'TaskFlow',
     description: 'A modern to-do app redesigned for productivity.',
-    link: 'https://timmysolomon.github.io/taskflow/',
+    link: 'https://taskflow-opal-delta.vercel.app/',
     image: '/images/taskflow.png',
   },
   {
     title: 'MindScribe',
     description: 'Blog platform for cozy writing and deep thoughts.',
-    link: 'https://timmysolomon.github.io/mindscribe/',
+    link: 'https://mindscribe-liart.vercel.app/',
     image: '/images/mindscribe.png',
   },
 ];
